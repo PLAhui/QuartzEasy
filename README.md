@@ -17,3 +17,6 @@
 - 删除任务 /quartz/deleteSchedule
 - 获取任务最近5次执行时间 /quartz/getCronSchdule
 
+![输入图片说明](doc/images/console.png)
+![输入图片说明](doc/images/postmain.png)
+![输入图片说明](doc/images/cron.png)
