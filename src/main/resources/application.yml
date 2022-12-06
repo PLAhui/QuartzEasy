@@ -1,0 +1,26 @@
+server:
+  port: 8889
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      url: jdbc:mysql://8.140.130.92:3306/dbapi?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+      username: dbapi
+      password: xZDpstf3J4SYPXJG
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
+  quartz:
+    job-store-type: jdbc
+    wait-for-jobs-to-complete-on-shutdown: true
+    overwrite-existing-jobs: true
+
+mybatis:
+  mapper-locations: classpath*:org/example/*xml
+
